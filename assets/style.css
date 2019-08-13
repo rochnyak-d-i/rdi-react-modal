@@ -1,0 +1,106 @@
+.rdi-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rdi-modal__backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0,0,0, 0.4);
+}
+.rdi-modal__close {
+  position: absolute;
+  z-index: 3;
+  top: 10%;
+  right: 10%;
+  font-size: 2em;
+  background: transparent;
+  color: #FFF;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  border: 0;
+  cursor: pointer;
+}
+.rdi-modal__close:hover,
+.rdi-modal__close:focus {
+  background: transparent;
+  color: #000;
+}
+
+.rdi-modal__content {
+  z-index: 2;
+  overflow: hidden auto;
+
+  max-width: 90%;
+  max-height: 90%;
+  min-width: 50%;
+  border-radius: 3px;
+  padding: 0;
+  background-color: transparent;
+}
+.rdi-modal__content_colored {
+  padding: 10px;
+  background-color: #FFF;
+}
+
+.rdi-modal__label {
+  font-size: 2em;
+  margin: 0 0 10px;
+}
+
+.rdi-modal__describe {
+  margin: 0 0 10px;
+}
+
+.rdi-modal__input {
+  font-size: inherit;
+  font-family: inherit;
+  line-height: 1.3em;
+  border: 1px solid #d8d8d8;
+  width: 100%;
+  padding: 6px 10px;
+  box-sizing: border-box;
+}
+
+.rdi-modal__button {
+  font-size: inherit;
+  font-family: inherit;
+  line-height: 1;
+  padding: 10px;
+  border: 0;
+  border-radius: 3px;
+  margin-right: 10px;
+  color: #fff;
+  background: transparent;
+  transition: background-color 0.2s linear;
+  cursor: pointer;
+}
+.rdi-modal__button_main {
+  background-color: #4EB8BE;
+}
+.rdi-modal__button_main:hover,
+.rdi-modal__button_main:focus {
+  background-color: #00b3bb;
+}
+.rdi-modal__button_error {
+  background-color: #D5442B;
+}
+.rdi-modal__button_error:hover,
+.rdi-modal__button_error:focus {
+  background-color: #AB3622;
+}
+
+.rdi-modal__buttons {
+  margin-top: 20px;
+}
